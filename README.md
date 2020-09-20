@@ -26,4 +26,4 @@ Although I highley recommend going through the source code and figure out the ch
 
 # How to use
 
-Just edit the Makefile and build the module using 'make' command followed by inserting module with 'insmod *ko'. In some examples you might have to create the character device using 'mknod /proc/chrdevice c 243 0', use your major number and minor number.
+I'm assuming you know how to play with makefile and build a module for linux kernel. Just edit the Makefile and build the module using 'make' command followed by inserting module with 'insmod *ko' (here *.ko is you final kernel object). In some examples you might have to create the character device using 'mknod /proc/chrdevice c 243 0', use your major number and minor number in place of 243 (major) and 0(minor) numbers.
